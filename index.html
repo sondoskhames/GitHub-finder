@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Profile Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>GitHub Profile Finder</h1>
+    <p class="subtitle">Search any GitHub user to see their profile and latest repositories.</p>
+
+    <form id="form">
+      <input id="username" type="text" placeholder="Enter a GitHub username..." autocomplete="off" autofocus>
+      <button class="search" type="submit">Search</button>
+    </form>
+
+    <div class="try">
+      Try:
+      <span class="chip" data-user="torvalds">torvalds</span>
+      <span class="chip" data-user="gaearon">gaearon</span>
+      <span class="chip" data-user="sindresorhus">sindresorhus</span>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
